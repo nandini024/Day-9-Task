@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body style="border: 5px solid black; background-image: url('./images.jpg'); background-size: cover; background-position: center;">
+
+    <form>
+        <div style="width: 50%; margin: auto; padding: 20px; ">
+            <h2 style="text-align: center;">Student Registration Page</h2>
+            
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="Enter Your First Name" name="first-name" style="width: 100%; padding: 8px;">
+            <br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Enter Your Last Name" name="last-name" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter Your Email" name="email" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Your Password" name="password" id="password" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" placeholder="Confirm Your Password" name="confirm-password" id="confirm-password" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" placeholder="Enter Your Phone Number" name="phone" id="phone" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <label>Gender:</label>
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female" required> Female
+            </label>
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" style="width: 100%; padding: 8px; ">
+            <br>
+            
+            <p>Technical Skills:</p>
+            <label for="java">
+                <input type="checkbox" name="skills" value="Java" id="java"> Java
+            </label>
+            <br>
+            <label for="python">
+                <input type="checkbox" name="skills" value="Python" id="python"> Python
+            </label>
+            <br>
+            <label for="javascript">
+                <input type="checkbox" name="skills" value="JavaScript" id="javascript"> JavaScript
+            </label>
+            <br><br>
+            
+            <label for="college">College Name:</label>
+            <select id="college" name="college" style="width: 100%; padding: 8px; ">
+                <option value="" disabled selected>Select your College</option>
+                <option value="mvsr">MVSR Engineering College</option>
+                <option value="jntuh">JNTU Hyderabad</option>
+                <option value="osmania">Osmania University</option>
+                <option value="iit_hyderabad">CBIT Hyderabad</option>
+                <option value="iiit_hyderabad">VASAVI Hyderabad</option>
+            </select>
+            <br><br>
+            
+            <label for="year">Passed Out Year:</label>
+            <select id="year" name="year" style="width: 100%; padding: 8px; ">
+                <option value="" disabled selected>Select Academic Year</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+            </select>
+            <br><br>
+            
+            <label for="stream">Stream:</label>
+            <select id="stream" name="stream" required style="width: 100%; padding: 8px; ">
+                <option value="" disabled selected>Select Your Stream</option>
+                <option value="cse">CSE (Computer Science Engineering)</option>
+                <option value="ece">ECE (Electronics and Communication Engineering)</option>
+                <option value="eee">EEE (Electrical and Electronics Engineering)</option>
+            </select>
+            <br><br>
+            
+            <label for="resume">Upload your Resume:</label>
+            <input type="file" name="resume" id="resume" style="padding: 8px; ">
+            <br><br>
+            
+            <center><input type="submit" value="Click To Register"   color: green;"></center>
+        </div>
+    </form>
+
+</body>
+</html>
